@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+
+        .wrapper{ /* caixa principal que recebera as outras internas */
+             display: flex;/* para transformar em blocos */
+            flex-direction: row;/* coloquei em linha, mas temos colunas */
+            flex-wrap: wrap;/* qnd crio caixas elas ficam uma do lado da outra o flex-wrap:wrap dara a quebra quando
+            totalizar 100% */
+            justify-content: center;
+            align-items: center;/* alinhamos os blocos no centro */
+            width: 100%;
+            height: auto;
+            background-color: rgb(255, 255, 255);
+            padding: 0px;
+        }
+
+        .boxBanner{
+            background-color:chocolate;
+            width: 100%;
+            height: 300px;
+            margin:0px;
+        }
+        .boxConheca{
+            background-color: white;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            font-size: 180%;
+        }
+
+        .boxLogo{
+            background-color: cadetblue;
+            width: 20%;
+            height: 50px;
+            margin: 0px;
+            color:rgb(225, 91, 91);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 2%;
+            margin-bottom: 0%;
+        }
+
+
+        .boxBotoes{
+            background-color:  cadetblue;
+            width: 80%;
+            height: 50px;
+            margin: 0px; /* margem ao redor das caixas para ficarem distante*/
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 2%;
+            margin-bottom: 0%;
+            
+        }
+
+        .boxTratamentos{
+            background-color: #2F3555;
+            width: 20%;
+            height: 200px;
+            margin: 10px; /* margem ao redor das caixas para ficarem distante*/
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: 2%;
+            border-radius: 5%;
+            font-size: 50%;
+            
+        
+        }
+        .boxDireita{
+            background-color: crimson;
+            width: 45%;
+            height: 300px;
+            margin: 10px;
+            border-radius: 5%;
+        }
+
+        .boxTexto{
+            background-color: rgb(255, 255, 255);
+            width: 45%;
+            height: 300px;
+            margin: 10px;
+            border-radius: 5%;
+            font-size: 80%;
+            text-align: center;
+     
+        }
+        
+        .boxInfo{
+            background-color:  rgb(22, 94, 96);
+            width: 30%;
+            height: 150px;
+            padding-left: 3.3%;
+            margin: 0px;
+        }
+        
+
+        .boxRodape{
+            background-color:  cadetblue;
+            width: 100%;
+            height: 50px;
+            margin: 0px; /* coloque margem se quiser q nao fique colado na margen do wrapper */
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(0, 0, 0);
+            padding-top: 1.5%;
+        }
+
+
+        /* breakpoints tamanho para cada tipo de tela ex: quero minhas caixas de tratamentos fiquem menores */
+
+        @media screen and (min-width: 376px) {
+            .boxTratamentos{
+                width: 50%;
+                height: auto;
+                float: left;
+                margin: 1%;
+            }
+            .boxDireita{
+                width: 50%;
+                height: auto;
+                float: left;
+                margin: 1%;
+            }
+
+
+
+        } 
+        @media screen and (min-width: 576px) {
+            .boxTratamentos{
+                width: 50%;
+                height: auto;
+                float: left;
+                margin: 1%;
+            }
+
+            .boxDireita{
+                width: 50%;
+                height: auto;
+                float: left;
+                margin: 1%;
+            }
+        } 
+
+        @media screen and (min-width: 768px) {
+            .boxTratamentos{
+                width: 15%;
+                float: left;
+                margin-left: 5%;
+                padding: 1%;
+            }
+            
+            .boxDireita{
+                width: 15%;
+                float: left;
+                margin-left: 5%;
+                padding: 1%;
+            }
+        } 
+
+        @media screen and (min-width: 992px) {
+            .boxTratamentos{
+                width: 20%;
+                float: left;
+                margin-left: 1%;
+                padding: 1%;
+            }
+
+            .boxDireita{
+                width: 20%;
+                float: left;
+                margin-left: 1%;
+                padding: 1%;
+            }
+            
+        } 
+
+        @media screen and (min-width: 1200px) {
+            .boxTratamentos{
+                width: 20%;
+                float: left;
+                margin-left: 1%;
+                padding: 1%;
+            }
+
+            .boxDireita{
+                width: 20%;
+                float: left;
+                margin-left: 1%;
+                padding: 1%;
+            }
+            
+        } 
+            
+        
+
+
+
+
+        /*MENU*/
+
+nav{
+	float: right;
+}
+
+nav ul{
+	list-style: none; /*remover bolinhas*/
+	margin: 0px;
+	padding: 0px;
+}
+
+nav ul li{
+	float: left;
+}
+
+nav ul li a{
+	text-decoration: none; /*remover sublinhado*/
+	color: #000000;
+	padding: 15px 15px 10px 15px;
+}
+
+nav ul li a:hover{ /*hover (mouse sobre o link)*/
+	color: #000000;
+	/*text-decoration: underline;*/
+	border-bottom: #000000 2px solid;
+}
+
+        .tamanhoBanner{
+            width: 100%;
+            height: 400px;
+        }
+
+        .tamanhoLateral{
+            width: 100%;
+            height:400px;
+        }
+        .tamanhoimagen1{
+            width: 100%;
+            height: 300px;
+            border-radius: 5%;
+          
+            
+
+        }
+
+        .tamananhoBanner{
+            width: 100%;
+            height: 300px;
+            margin:0px;
+            
+        }
+
+        h1{
+            color: rgb(44, 163, 163);
+            text-align: center;
+            width: 100%;
+        
+        }
+
+        .h8{
+            color: rgb(5, 151, 151);
+        }
+        
+        h2{
+            color: white;
+        }
+
+        .tamanhoLogo{
+            width: 100%;
+            height: 50px;
+
+
+        }
+
+        h3{
+            color: aliceblue;
+            font-size: 1000;
+        }
+
+        .boxImagem{
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: auto;
+            margin-top: 0%;
+            text-align: center;
+            padding-top: 0%;
+
+        }
+
+        .boxTexto2{
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 200px;
+            margin: 0px;
+            border-radius: 5%;
+            font-size: 70%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+     
+            
+
+
+
+        }
+        
+        .tamanhoimagem3{
+            margin-top: 0%;
+            width: 100%;
+            height: 400px;
+            
+        }
+
+        /***** CONTATO *****/
+       
+      #conteudo_formulário{
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    
+     .boxForm{ /*Caixa principal do formulário */
+        width: 100%;
+        margin: auto;
+        background-color: #ffffff;
+        height: auto;
+        margin-right: 5%;
+    }
+    
+     form{ /*Caixa para receber os inputs */
+        background-color: #ffffff;
+         width: 80%; /*Largura do formulário */
+         margin: auto; /*Para ficar no centro */
+        font-family:'Century Gothic', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-left: 30%;
+    
+    }
+    
+    input, textarea{ /*fundo da caixa de preenchimento de dados */
+       font-family:'Century Gothic', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-weight: normal;
+       font-size: 1.2em; /*fonte responsiva */
+       background-color: #e0d7d7;
+       padding: 5px;
+       border-style: solid;
+       border-color: #e0d7d7;
+       width: 50%;
+       
+    }
+    
+    label{
+       font-family:'Century Gothic', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       color: #63615d;
+       font-size: 1.4em;
+    }
+    
+    input:hover, textarea:hover{
+       background-color: rgb(241, 241, 241);
+    }
+    
+    #btn{
+       font-family:'Century Gothic', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       color: #fff;
+       font-weight: normal;
+       font-size: 1.3em; /*fonte responsiva */
+       background-color: rgb(82, 160, 160);
+       padding: 5px;
+       border-color: rgb(48, 84, 84);
+       border-style: solid;
+       margin-right: 5%;
+       width: 10%;
+    }
+    
+    #cData {
+        width: 14%;
+    }
+
+        
+
+    
+
